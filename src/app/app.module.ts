@@ -10,7 +10,7 @@ import { ProductService } from './product.service';
 import { RouterModule, Routes } from '@angular/router';
 import { ProductListComponent } from './product-list/product-list.component';
 
-let appRoutes: Routes = [
+let appRoutes: Routes = <Routes>[
   {
     path: 'products',
     component: ProductListComponent
