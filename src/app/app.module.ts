@@ -10,25 +10,7 @@ import { ProductService } from './product.service';
 import { RouterModule, Routes } from '@angular/router';
 import { ProductListComponent } from './product-list/product-list.component';
 
-let appRoutes: Routes = []
-
-appRoutes.push({
-  path: 'products',
-  component: ProductListComponent
-})
-
-appRoutes.push(
-  {
-    path: 'product/:id',
-    component: ProductPageComponent
-  })
-
-appRoutes.push(
-  {
-    path: '',
-    redirectTo: 'products',
-    pathMatch: 'full'
-  })
+const appRoutes: Routes = []
 
 @NgModule({
   declarations: [
